@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فزعة - تطبيقك الذكي للتوصيل</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2011%2C%202025%2C%2012_26_26%20PM-98PAtqkVMNqA9pqO79k5oZxi9ru1B3.png" alt="Faz'a">
+                    <span>فزعة</span>
+                </div>
+
+                <nav class="desktop-nav">
+                    <a href="#features" data-ar="المميزات" data-en="Features">المميزات</a>
+                    <a href="#how-it-works" data-ar="كيف يعمل" data-en="How It Works">كيف يعمل</a>
+                    <a href="#calculator" data-ar="حاسبة التوصيل" data-en="Delivery Calculator">حاسبة التوصيل</a>
+                    <a href="#contact" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button id="lang-switcher" class="lang-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span id="lang-text">EN</span>
+                    </button>
+                    <a href="https://wa.me/962799691748" target="_blank" class="whatsapp-btn desktop-only">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        <span data-ar="واتساب" data-en="WhatsApp">واتساب</span>
+                    </a>
+                    <button id="mobile-menu-btn" class="mobile-menu-btn">
+                        <svg id="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                        <svg id="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <nav id="mobile-nav" class="mobile-nav">
+                <a href="#features" data-ar="المميزات" data-en="Features">المميزات</a>
+                <a href="#how-it-works" data-ar="كيف يعمل" data-en="How It Works">كيف يعمل</a>
+                <a href="#calculator" data-ar="حاسبة التوصيل" data-en="Delivery Calculator">حاسبة التوصيل</a>
+                <a href="#contact" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+                <a href="https://wa.me/962799691748" target="_blank" class="whatsapp-btn-mobile">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    <span data-ar="واتساب" data-en="WhatsApp">واتساب</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section-animate">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="badge" data-ar="🚀 البديل الأفضل لتطبيقات التوصيل" data-en="🚀 The Best Alternative to Delivery Apps">
+                            🚀 البديل الأفضل لتطبيقات التوصيل
+                        </div>
+                        <h1>
+                            <span class="title-main" data-ar="فزعة" data-en="Faz'a">فزعة</span>
+                            <span class="title-sub" data-ar="تطبيقك الذكي للتوصيل" data-en="Your Smart Delivery App">تطبيقك الذكي للتوصيل</span>
+                        </h1>
+                        <p class="hero-description" data-ar="اكتشف أفضل المطاعم والمقاهي والمولات في عمان حسب ميزانيتك. توصيل أرخص وأسرع مع خاصية البحث الذكي!" data-en="Discover the best restaurants, cafes, and malls in Amman based on your budget. Cheaper and faster delivery with smart search!">
+                            اكتشف أفضل المطاعم والمقاهي والمولات في عمان حسب ميزانيتك. توصيل أرخص وأسرع مع خاصية البحث الذكي!
+                        </p>
+                        <div class="hero-cta">
+                            <a href="https://wa.me/962799691748" target="_blank" class="btn btn-primary">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                                <span data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</span>
+                            </a>
+                            <a href="tel:0799691748" class="btn btn-secondary">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <span data-ar="اتصل الآن" data-en="Call Now">اتصل الآن</span>
+                            </a>
+                        </div>
+                        <a href="https://instagram.com/fazaa.jo1" target="_blank" class="instagram-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <span data-ar="تابعنا على انستغرام @fazaa.jo1" data-en="Follow us on Instagram @fazaa.jo1">تابعنا على انستغرام @fazaa.jo1</span>
+                        </a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2011%2C%202025%2C%2012_26_26%20PM-98PAtqkVMNqA9pqO79k5oZxi9ru1B3.png" alt="Faz'a App" class="animate-float">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features section-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-ar="لماذا فزعة؟" data-en="Why Faz'a?">لماذا فزعة؟</h2>
+                    <p data-ar="مميزات تجعلنا الخيار الأفضل لك" data-en="Features that make us your best choice">مميزات تجعلنا الخيار الأفضل لك</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 data-ar="بحث حسب الميزانية" data-en="Budget-Based Search">بحث حسب الميزانية</h3>
+                        <p data-ar="حدد ميزانيتك وشوف كل الأماكن اللي تناسبك - مثلاً: وين أقدر آكل ب 4 دنانير؟" data-en="Set your budget and see all places that fit - for example: where can I eat for 4 dinars?">حدد ميزانيتك وشوف كل الأماكن اللي تناسبك - مثلاً: وين أقدر آكل ب 4 دنانير؟</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3 data-ar="مواقع دقيقة" data-en="Accurate Locations">مواقع دقيقة</h3>
+                        <p data-ar="كل مكان معروض على الخريطة مع المسافة الدقيقة من موقعك" data-en="Every place is shown on the map with the exact distance from your location">كل مكان معروض على الخريطة مع المسافة الدقيقة من موقعك</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <h3 data-ar="صور وقوائم كاملة" data-en="Full Photos & Menus">صور وقوائم كاملة</h3>
+                        <p data-ar="شوف صور الأكل والمنيو والأسعار قبل ما تطلب" data-en="See food photos, menus, and prices before you order">شوف صور الأكل والمنيو والأسعار قبل ما تطلب</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3 data-ar="تقييمات حقيقية" data-en="Real Reviews">تقييمات حقيقية</h3>
+                        <p data-ar="تقييمات من زبائن حقيقيين تساعدك تختار الأفضل" data-en="Reviews from real customers help you choose the best">تقييمات من زبائن حقيقيين تساعدك تختار الأفضل</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <h3 data-ar="حساب تلقائي للتوصيل" data-en="Automatic Delivery Calculation">حساب تلقائي للتوصيل</h3>
+                        <p data-ar="0.15 دينار لكل كيلومتر - أرخص من أي تطبيق تاني!" data-en="0.15 JOD per kilometer - cheaper than any other app!">0.15 دينار لكل كيلومتر - أرخص من أي تطبيق تاني!</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3 data-ar="توصيل سريع" data-en="Fast Delivery">توصيل سريع</h3>
+                        <p data-ar="شبكة توصيل واسعة تضمن وصول طلبك بأسرع وقت" data-en="Wide delivery network ensures your order arrives quickly">شبكة توصيل واسعة تضمن وصول طلبك بأسرع وقت</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works section-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-ar="كيف يعمل التطبيق؟" data-en="How Does It Work?">كيف يعمل التطبيق؟</h2>
+                    <p data-ar="أربع خطوات بسيطة لطلبك" data-en="Four simple steps for your order">أربع خطوات بسيطة لطلبك</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        <h3 data-ar="ابحث حسب ميزانيتك" data-en="Search by Budget">ابحث حسب ميزانيتك</h3>
+                        <p data-ar="حدد المبلغ اللي معك والتطبيق بدلك على كل الأماكن المناسبة" data-en="Set your budget and the app shows you all suitable places">حدد المبلغ اللي معك والتطبيق بدلك على كل الأماكن المناسبة</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                                <path d="M7 2v20"></path>
+                                <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
+                            </svg>
+                        </div>
+                        <h3 data-ar="اختر المطعم" data-en="Choose Restaurant">اختر المطعم</h3>
+                        <p data-ar="شوف الصور والمنيو والتقييمات والموقع على الخريطة" data-en="See photos, menu, reviews, and location on the map">شوف الصور والمنيو والتقييمات والموقع على الخريطة</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                        </div>
+                        <h3 data-ar="اطلب وادفع" data-en="Order & Pay">اطلب وادفع</h3>
+                        <p data-ar="التطبيق بحسب تكلفة التوصيل تلقائياً (0.15 د.أ/كم)" data-en="The app automatically calculates delivery cost (0.15 JOD/km)">التطبيق بحسب تكلفة التوصيل تلقائياً (0.15 د.أ/كم)</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5v14"></path>
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg>
+                        </div>
+                        <h3 data-ar="استلم طلبك" data-en="Receive Order">استلم طلبك</h3>
+                        <p data-ar="توصيل سريع لباب بيتك أو مكتبك" data-en="Fast delivery to your home or office">توصيل سريع لباب بيتك أو مكتبك</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section id="calculator" class="calculator section-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-ar="احسب تكلفة التوصيل" data-en="Calculate Delivery Cost">احسب تكلفة التوصيل</h2>
+                    <p data-ar="0.15 دينار لكل كيلومتر" data-en="0.15 JOD per kilometer">0.15 دينار لكل كيلومتر</p>
+                </div>
+                <div class="calculator-card">
+                    <div class="calculator-input">
+                        <label data-ar="المسافة (كيلومتر)" data-en="Distance (kilometers)">المسافة (كيلومتر)</label>
+                        <input type="number" id="distance-input" placeholder="أدخل المسافة" min="0" step="0.1">
+                    </div>
+                    <div class="calculator-result">
+                        <span class="result-label" data-ar="تكلفة التوصيل" data-en="Delivery Cost">تكلفة التوصيل</span>
+                        <span class="result-value">
+                            <span id="cost-result">0.00</span>
+                            <span class="currency" data-ar="د.أ" data-en="JOD">د.أ</span>
+                        </span>
+                    </div>
+                    <div class="calculator-examples">
+                        <h4 data-ar="أمثلة:" data-en="Examples:">أمثلة:</h4>
+                        <div class="examples-grid">
+                            <div class="example">
+                                <span data-ar="5 كم" data-en="5 km">5 كم</span>
+                                <span data-ar="0.75 د.أ" data-en="0.75 JOD">0.75 د.أ</span>
+                            </div>
+                            <div class="example">
+                                <span data-ar="10 كم" data-en="10 km">10 كم</span>
+                                <span data-ar="1.50 د.أ" data-en="1.50 JOD">1.50 د.أ</span>
+                            </div>
+                            <div class="example">
+                                <span data-ar="15 كم" data-en="15 km">15 كم</span>
+                                <span data-ar="2.25 د.أ" data-en="2.25 JOD">2.25 د.أ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Details Section -->
+        <section class="app-details section-animate">
+            <div class="container">
+                <div class="app-details-grid">
+                    <div class="app-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2011%2C%202025%2C%2012_26_26%20PM-98PAtqkVMNqA9pqO79k5oZxi9ru1B3.png" alt="Faz'a App">
+                    </div>
+                    <div class="app-content">
+                        <h2 data-ar="فزعة - البديل الأفضل لطلبات" data-en="Faz'a - The Best Alternative to Delivery Apps">فزعة - البديل الأفضل لطلبات</h2>
+                        <p data-ar="كل ما تحتاجه في تطبيق واحد" data-en="Everything you need in one app">كل ما تحتاجه في تطبيق واحد</p>
+                        <ul class="features-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span data-ar="توصيل أرخص من أي تطبيق تاني" data-en="Cheaper delivery than any other app">توصيل أرخص من أي تطبيق تاني</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span data-ar="بحث ذكي حسب الميزانية" data-en="Smart budget-based search">بحث ذكي حسب الميزانية</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span data-ar="تغطية شاملة لكل عمان" data-en="Complete coverage of all Amman">تغطية شاملة لكل عمان</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span data-ar="مطاعم، مقاهي، مولات، ومحلات" data-en="Restaurants, cafes, malls, and shops">مطاعم، مقاهي، مولات، ومحلات</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span data-ar="خرائط دقيقة وحساب تلقائي للمسافة" data-en="Accurate maps and automatic distance calculation">خرائط دقيقة وحساب تلقائي للمسافة</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span data-ar="صور عالية الجودة لكل الأماكن" data-en="High-quality photos of all places">صور عالية الجودة لكل الأماكن</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+                    <p data-ar="نحن هنا لخدمتك" data-en="We are here to serve you">نحن هنا لخدمتك</p>
+                </div>
+                <div class="contact-grid">
+                    <a href="https://wa.me/962799691748" target="_blank" class="contact-card whatsapp">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                        </div>
+                        <h3 data-ar="واتساب" data-en="WhatsApp">واتساب</h3>
+                        <p>0799691748</p>
+                    </a>
+                    <a href="tel:0799691748" class="contact-card phone">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <h3 data-ar="اتصل بنا" data-en="Call Us">اتصل بنا</h3>
+                        <p>0799691748</p>
+                    </a>
+                    <a href="https://instagram.com/fazaa.jo1" target="_blank" class="contact-card instagram">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </div>
+                        <h3 data-ar="انستغرام" data-en="Instagram">انستغرام</h3>
+                        <p>@fazaa.jo1</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2011%2C%202025%2C%2012_26_26%20PM-98PAtqkVMNqA9pqO79k5oZxi9ru1B3.png" alt="Faz'a">
+                        <span>فزعة</span>
+                    </div>
+                    <p data-ar="تطبيق التوصيل الذكي في عمان" data-en="Smart Delivery App in Amman">تطبيق التوصيل الذكي في عمان</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <nav>
+                        <a href="#features" data-ar="المميزات" data-en="Features">المميزات</a>
+                        <a href="#how-it-works" data-ar="كيف يعمل" data-en="How It Works">كيف يعمل</a>
+                        <a href="#calculator" data-ar="حاسبة التوصيل" data-en="Delivery Calculator">حاسبة التوصيل</a>
+                        <a href="#contact" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+                    </nav>
+                </div>
+                <div class="footer-col">
+                    <h4 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h4>
+                    <div class="footer-contact">
+                        <a href="tel:0799691748">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            0799691748
+                        </a>
+                        <a href="https://wa.me/962799691748" target="_blank">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            0799691748
+                        </a>
+                        <a href="https://instagram.com/fazaa.jo1" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            @fazaa.jo1
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span data-ar="فزعة. جميع الحقوق محفوظة." data-en="Faz'a. All rights reserved.">فزعة. جميع الحقوق محفوظة.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
